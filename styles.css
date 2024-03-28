@@ -42,8 +42,9 @@ header {
 
 h1 {
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-style: italic;
   color: #000;
-  font-size: 30px;
-  font-weight: 100;
+  font-size: 25px;
+  font-weight: 90;
   letter-spacing: 2px;
 }
