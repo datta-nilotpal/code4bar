@@ -104,3 +104,15 @@ h1 {
     text-align: left;
   }
 }
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 60px;
+}
