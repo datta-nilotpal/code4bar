@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <meta property="og:type" content="website" />
-  <title>OpinioSitus: Complimentary Premium Web Development for Lawyers</title>
-</head>
-<body>
-  <header>
-    <div class="logoandh1">
-		<img class="logo" src="logo.svg" alt="OpinioSitus Legal Web Development Company Logo">
-		<h1>OpinioSitus</h1>
-	</div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-    <label for="menu-toggle" class="hamburger-menu" aria-label="Menu">☰</label>
-    <nav>
-      <a class="header-menu" href="#hero-section">Home</a>
-      <a class="header-menu" href="#whyus-section">Why Us</a>
-      <a class="header-menu" href="#faq-section">FAQs</a>
-      <a class="header-menu" href="#cta-section">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="hero-section">
-      <h2 class="hero-h2">Complimentary Premium Web Development for Lawyers</h2>
-      <h3 class="hero-h3">Exceptional Offer? Absolutely. Too Good to Be True? Not at All.</h3>
-      <p class="hero-paragraph">At OpinioSitus, we're as serious about providing premium web development for lawyers and law firms as you are about defending the law. This unique offer combines our deep understanding for legal advocacy with our expertise in creating fast, responsive, and visually compelling websites.</p>
-      <a class="hero-btn" href="">Get in touch</a>
-    </section>
-    
-    <section id="whyus-section">
-      <h2 class="whyus-h2">Why Choose Us?</h2>
-      <div class="whyus-panel">
-        <h3 class="whyus-heading">Tailored for Lawyers</h3>
-        <p class="whyus-text">We specialize in crafting websites designed for the legal industry. We understand your unique needs and showcase your expertise effectively.</p>
-      </div>
-      <div class="whyus-panel">
-        <h3 class="whyus-heading">Quick & Lightweight</h3>
-        <p class="whyus-text">We prioritize speed and efficiency. Our lightweight code ensures your website are fine-tuned for fast load times and optimal performance.</p>
-      </div>
-      <div class="whyus-panel">
-        <h3 class="whyus-heading">Breathtaking designs</h3>
-        <p class="whyus-text">Our websites are visual striking works of art. We hand craft each of our designs to captivate and impress your clients at first glance.</p>
-      </div>
-      <div class="whyus-panel">
-        <h3 class="whyus-heading">Completely Free!</h3>
-        <p class="whyus-text">Pay us nothing to develop your website and go online for free. Buy a domain and hosting from us or elsewhere and we take care of the rest.</p>
-      </div>
-    </section>
-
-    <section id="faq-section">
-      <h2 class="faq-h2">FAQs</h2>
-      <div class="faq-item">
-        <h3 class="question">Why are you offering free web development services?</h3>
-        <p class="answer">We're in the beta phase of launching our platform and are looking to build a robust portfolio of work. By offering our services for free to our initial clients, we can gather valuable feedback and refine our offerings to better serve the legal community.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="question">How long does it take to develop a website?</h3>
-        <p class="answer">The timeline can vary depending on the complexity of the website and your specific needs. Generally, we aim to have your site up and running within 4 to 6 weeks from the start of the project.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="question">Can I customize my website?</h3>
-        <p class="answer">Absolutely. Our team works closely with you to ensure your website reflects your practice’s identity. From layout to content, you have the final say in how your site looks and functions.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="question">Will my website be mobile-friendly?</h3>
-        <p class="answer">Yes, all websites we develop are responsive, ensuring they look great and function smoothly across all devices, including smartphones and tablets.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="question">What if I need updates or changes after my site goes live?</h3>
-        <p class="answer">We provide a period of post-launch support to address any immediate needs or adjustments. For ongoing updates, we'll discuss the options with you to find a suitable solution.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="question">Are there any hidden costs?</h3>
-        <p class="answer">No. Our web development service is completely free. The only costs you will incur are for domain registration and hosting, which you can purchase through us or a provider of your choice.</p>
-      </div>
-    </section>
-
-    <section id="cta-section">
-      <h2 class="cta-h2">Ready to Elevate Your Online Presence?</h2>
-      <p>Contact us today to schedule your consultation and take advantage of this exclusive offer for lawyers.</p>
-      <a class="cta-btn" href="#contact-form">Get in touch</a>
-    </section>
-  </main>
-
-<script>
-// JavaScript for toggling the hamburger menu
-document.getElementById('menu-toggle').addEventListener('change', function() {
-  document.querySelector('nav').classList.toggle('nav-active');
-});
-</script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="script.js"></script>
+		<meta property="og:type" content="website" />
+		<title>OpinioSitus: Complimentary Premium Web Development for Lawyers</title>
+	</head>
+	<body>
+		<header>
+			<div class="logoandh1">
+				<img class="logo" src="logo.svg" alt="OpinioSitus Legal Web Development Company Logo">
+				<h1>OpinioSitus</h1>
+			</div>
+			<div class="topnav" id="myTopnav">
+				<a class="header-menu" href="#hero-section">Home</a>
+				<a class="header-menu" href="#whyus-section">Why Us</a>
+				<a class="header-menu" href="#faq-section">FAQs</a>
+				<a class="header-menu" href="#cta-section">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+		</header>
+		<main>
+			<section id="hero-section">
+				<h2 class="hero-h2">Complimentary Premium Web Development for Lawyers</h2>
+				<h3 class="hero-h3">Exceptional Offer? Absolutely. Too Good to Be True? Not at All.</h3>
+				<p class="hero-paragraph">At OpinioSitus, we're as serious about providing premium web development for lawyers and law firms as you are about defending the law. This unique offer combines our deep understanding for legal advocacy with our expertise in creating fast, responsive, and visually compelling websites.</p>
+				<a class="hero-btn" href="">Get in touch</a>
+			</section>
+			<section id="whyus-section">
+				<h2 class="whyus-h2">Why Choose Us?</h2>
+				<div class="whyus-panel">
+					<h3 class="whyus-heading">Tailored for Lawyers</h3>
+					<p class="whyus-text">We specialize in crafting websites designed for the legal industry. We understand your unique needs and showcase your expertise effectively.</p>
+				</div>
+				<div class="whyus-panel">
+					<h3 class="whyus-heading">Quick & Lightweight</h3>
+					<p class="whyus-text">We prioritize speed and efficiency. Our lightweight code ensures your website are fine-tuned for fast load times and optimal performance.</p>
+				</div>
+				<div class="whyus-panel">
+					<h3 class="whyus-heading">Breathtaking designs</h3>
+					<p class="whyus-text">Our websites are visual striking works of art. We hand craft each of our designs to captivate and impress your clients at first glance.</p>
+				</div>
+				<div class="whyus-panel">
+					<h3 class="whyus-heading">Completely Free!</h3>
+					<p class="whyus-text">Pay us nothing to develop your website and go online for free. Buy a domain and hosting from us or elsewhere and we take care of the rest.</p>
+				</div>
+			</section>
+			<section id="faq-section">
+				<h2 class="faq-h2">FAQs</h2>
+				<div class="faq-item">
+					<h3 class="question">Why are you offering free web development services?</h3>
+					<p class="answer">We're in the beta phase of launching our platform and are looking to build a robust portfolio of work. By offering our services for free to our initial clients, we can gather valuable feedback and refine our offerings to better serve the legal community.</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="question">How long does it take to develop a website?</h3>
+					<p class="answer">The timeline can vary depending on the complexity of the website and your specific needs. Generally, we aim to have your site up and running within 4 to 6 weeks from the start of the project.</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="question">Can I customize my website?</h3>
+					<p class="answer">Absolutely. Our team works closely with you to ensure your website reflects your practice’s identity. From layout to content, you have the final say in how your site looks and functions.</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="question">Will my website be mobile-friendly?</h3>
+					<p class="answer">Yes, all websites we develop are responsive, ensuring they look great and function smoothly across all devices, including smartphones and tablets.</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="question">What if I need updates or changes after my site goes live?</h3>
+					<p class="answer">We provide a period of post-launch support to address any immediate needs or adjustments. For ongoing updates, we'll discuss the options with you to find a suitable solution.</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="question">Are there any hidden costs?</h3>
+					<p class="answer">No. Our web development service is completely free. The only costs you will incur are for domain registration and hosting, which you can purchase through us or a provider of your choice.</p>
+				</div>
+			</section>
+			<section id="cta-section">
+				<h2 class="cta-h2">Ready to Elevate Your Online Presence?</h2>
+				<p>Contact us today to schedule your consultation and take advantage of this exclusive offer for lawyers.</p>
+				<a class="cta-btn" href="#contact-form">Get in touch</a>
+			</section>
+		</main>
+	</body>
 </html>
