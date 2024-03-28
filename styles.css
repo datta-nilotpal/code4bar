@@ -51,9 +51,6 @@ h1 {
 }
 
 .topnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
   background-color: #333;
   overflow: hidden;
 }
