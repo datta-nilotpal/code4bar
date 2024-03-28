@@ -52,7 +52,6 @@ h1 {
 
 .topnav {
   display: flex;
-  width: 75%;
   justify-content: space-between;
   align-items: left;
   background-color: #333;
@@ -60,6 +59,7 @@ h1 {
 }
 
 .topnav a {
+  float: left;
   display: block;
   overflow: hidden;
   color: #f2f2f2;
