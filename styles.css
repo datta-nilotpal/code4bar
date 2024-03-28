@@ -59,14 +59,12 @@ h1 {
 }
 
 .topnav a {
-  float: left;
-  display: block;
+  width: 75%;
   overflow: hidden;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .topnav a:hover {
