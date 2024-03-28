@@ -24,3 +24,18 @@ header {
   top: 0;
   z-index: 1000;
 }
+
+.logoandh1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 30px;
+  height: auto;
+}
