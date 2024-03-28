@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect x="2.304" y="7.489" width="26.553" height="16.84" style="fill:rgb(235,235,235);"/>
+    <g transform="matrix(1.14271,0,0,1.14271,-2.28332,-2.28332)">
+        <path d="M5.5,30C4.564,30.031 3.656,29.668 3,29C2.337,28.348 1.975,27.449 2,26.52L2,5.5C1.969,4.564 2.332,3.656 3,3C3.656,2.332 4.564,1.969 5.5,2L26.5,2C27.436,1.969 28.344,2.332 29,3C29.668,3.656 30.031,4.564 30,5.5L30,26.5C29.989,28.42 28.41,29.995 26.49,30L5.5,30Z" style="fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,1.15856,3.55271e-15)">
+        <g transform="matrix(1,0,0,1,-6.81963,-0.659932)">
+            <g transform="matrix(1.14428,0,0,1.21496,3.69264,-2.11713)">
+                <ellipse cx="11.3" cy="15.455" rx="6.554" ry="6.173" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.762855,0,0,0.809973,9.23834,4.14189)">
+                <ellipse cx="11.3" cy="15.455" rx="6.554" ry="6.173"/>
+            </g>
+        </g>
+        <g transform="matrix(1.76911,0,0,1.76911,4.44637,1.76325)">
+            <text x="6.154px" y="12.046px" style="font-family:'Broadway', fantasy;font-size:12px;fill:white;">S</text>
+        </g>
+    </g>
+</svg>
