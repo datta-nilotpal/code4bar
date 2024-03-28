@@ -52,7 +52,7 @@ h1 {
 
 .topnav {
   display: flex;
-  width: 75%;
+  justify-content: space-between;
   align-items: left;
   background-color: #333;
   overflow: hidden;
@@ -104,10 +104,3 @@ h1 {
     text-align: left;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .topnav {
-    width: 100%;
-  }
-}
-
