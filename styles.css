@@ -130,15 +130,6 @@ section {
   background-repeat: no-repeat;
 }
 
-.hero-container {
-  width: 80vw;
-  height: 50vh;
-  position:absolute;
-  left:50%;
-  top:50%;
-  box-sizing: border-box;
-}
-
 .hero-h2 {
   font-weight: 700;
   font-size: 45px;
