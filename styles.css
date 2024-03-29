@@ -130,9 +130,12 @@ section {
   background-repeat: no-repeat;
 }
 
-.hero-h2, .hero-h3, .hero-p {
-  color: #FFF;
-  width: 100%;
+.hero-container {
+  width: 80vw;
+  height: 50vh;
+  position:absolute;
+  left:50%;
+  top:50%;
   box-sizing: border-box;
 }
 
