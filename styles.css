@@ -38,6 +38,7 @@ header {
 h1 {
   font-weight: 600;
   font-size: 35px;
+  letter-spacing: 0px;
 }
 
 .logoandh1 {
@@ -58,13 +59,12 @@ h1 {
 
 .topnav {
   position: fixed;
-  top: 0;
-  left: 0;
+  right: 0;
   background-color: #fff;
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-end;
   z-index: 1000;
 }
 
