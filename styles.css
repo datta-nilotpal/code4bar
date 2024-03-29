@@ -64,10 +64,10 @@ h1 {
 .topnav a {
   float: left;
   display: block;
-  font-weight: 500;
+  font-weight: 300;
   text-transform: uppercase;
-  padding: 0 15px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
   border-style: none;
   color: #FFF;
   background-color: #EF411B;
