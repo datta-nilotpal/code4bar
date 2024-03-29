@@ -86,7 +86,7 @@ h1 {
   margin-right: 20px;
 }
 
-.icon {
+.topnav .icon {
   display: none;
 }
 
@@ -97,7 +97,7 @@ h1 {
     display: block;
   }
   .topnav.responsive {position: relative;}
-  .icon {
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
