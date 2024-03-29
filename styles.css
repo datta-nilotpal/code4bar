@@ -66,14 +66,15 @@ h1 {
   display: block;
   font-weight: 600;
   text-transform: uppercase;
-  border-radius: 56px;
+  padding: 0 16px;
+  border-radius: 25px;
   border-style: none;
   color: #FFF;
   background-color: #EF411B;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .topnav a:hover {
