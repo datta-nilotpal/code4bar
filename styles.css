@@ -39,7 +39,6 @@ h1 {
   font-style: italic;
   font-size: 35px;
   letter-spacing: -1px;
-  text-decoration: none;
 }
 
 .logoandh1 {
@@ -49,6 +48,7 @@ h1 {
   width: 100%;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .topnav {
