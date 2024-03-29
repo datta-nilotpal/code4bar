@@ -53,7 +53,7 @@ h1 {
 
 .topnav {
   position: fixed;
-  right: 50;
+  right: 0;
   padding-right: 10px;
   width: auto;
   display: flex;
@@ -75,7 +75,7 @@ h1 {
 }
 
 .topnav a:hover, .topnav a.active {
-  font-weight: 700;
+  text-shadow: 0.5px 0.5px 0 #FFF, -0.5px -0.5px 0 #FFF, 0.5px -0.5px 0 #FFF, -0.5px 0.5px 0 #FFF;
 }
 
 .topnav a:not(:last-child) {
