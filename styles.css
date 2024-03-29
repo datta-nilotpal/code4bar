@@ -124,3 +124,7 @@ section {
   padding-top: 60px;
   box-sizing: border-box;
 }
+
+.hero-section {
+  background-image: url("bg.jpg");
+}
