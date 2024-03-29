@@ -1,4 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap');
+
+logo {
+  width 50px;
+  height: auto;
+}
 
 header {
   position: fixed;
