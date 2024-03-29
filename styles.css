@@ -36,9 +36,10 @@ header {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 800;
+  font-style: italic;
   font-size: 35px;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
 }
 
 .logoandh1 {
@@ -50,16 +51,10 @@ h1 {
   overflow: hidden;
 }
 
-//.topnav {
-  display: flex;
-  align-items: center;
-  justify-content: start; 
-  width: 100%;
-}
-
 .topnav {
   position: fixed;
   right: 0;
+  padding-right: 10px;
   background-color: #fff;
   width: auto;
   display: flex;
@@ -71,6 +66,7 @@ h1 {
 .topnav a {
   float: left;
   display: block;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 0 16px;
   color: #EF411B;
