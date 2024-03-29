@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap');
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-family: 'Cormorant Garamond', serif;
+}
+
 .topnav {
   overflow: hidden;
   display: flex;
@@ -50,4 +62,8 @@
     display: block;
     text-align: left;
   }
+}
+
+body {
+  padding-top: 60px;
 }
