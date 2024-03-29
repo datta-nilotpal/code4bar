@@ -19,10 +19,7 @@ header {
   left: 0;
   width: 100vw;
   z-index: 1000;
-  border-bottom: 1px solid #DDD;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   font-family: 'Cormorant Garamond', serif;
-  text-shadow: 0 1px 0 #FFF;
   display: inline-flex;
   align-items: center;
   justify-content: start;
@@ -37,6 +34,7 @@ header {
 }
 
 h1 {
+  color: #FFF;
   font-weight: 700;
   font-style: italic;
   font-size: 35px;
@@ -81,7 +79,7 @@ h1 {
 }
 
 .topnav a.active {
-  color: #000;
+  color: #FFF;
 }
 
 .topnav .icon {
