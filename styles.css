@@ -46,13 +46,11 @@ h1 {
   justify-content: start;
   width: 100%;
   position: relative;
-  padding-bottom: 5px;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 .topnav {
-  overflow: hidden;
+  //overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: start; 
