@@ -68,8 +68,8 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   text-transform: uppercase;
-  padding: 0 10px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 5px;
   border-style: none;
   color: #FFF;
   background-color: #EF411B;
@@ -80,7 +80,7 @@ h1 {
 }
 
 .topnav a:hover {
-  background-color: #DDD;
+  background-color: #FA6400;
   color: #000;
 }
 
