@@ -96,6 +96,9 @@ h1 {
   header {
     text-align: center;
   }
+  .logoandh1 {
+    justify-content: start;
+  }
 }
 
 body {
