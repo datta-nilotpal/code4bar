@@ -67,6 +67,7 @@ h1 {
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 56px;
+  border-style: none;
   color: #FFF;
   background-color: #EF411B;
   cursor: pointer;
@@ -77,11 +78,11 @@ h1 {
 
 .topnav a:hover {
   background-color: #DDD;
-  color: black;
+  color: #000;
 }
 
 .topnav a.active {
-  color: #FFF;
+  color: #000;
 }
 
 .topnav a:not(:last-child) {
