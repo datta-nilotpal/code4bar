@@ -1,11 +1,15 @@
 .topnav {
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start; 
 }
 
 .topnav a {
   float: left;
   display: block;
   text-transform: uppercase;
+  padding: 0 16px;
   color: #EF411B;
   text-align: center;
   text-decoration: none;
