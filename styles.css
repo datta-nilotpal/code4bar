@@ -125,6 +125,6 @@ section {
   box-sizing: border-box;
 }
 
-.hero-section {
+#hero-section {
   background-image: url("bg.jpg");
 }
