@@ -66,8 +66,7 @@ h1 {
   display: block;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 2px;
-  border-radius: .25rem;
+  border-radius: 56px;
   color: #FFF;
   background-color: #EF411B;
   cursor: pointer;
