@@ -93,8 +93,9 @@ h1 {
   .topnav {
     display: none;
   }
-  .logoandh1 {
-    text-align: center;
+  header {
+    display: flex;
+    justify-content: center;
   }
 }
 
