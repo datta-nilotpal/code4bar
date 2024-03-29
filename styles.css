@@ -64,10 +64,10 @@ h1 {
 .topnav a {
   float: left;
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
-  padding: 0 16px;
-  border-radius: 25px;
+  padding: 0 15px;
+  border-radius: 10px;
   border-style: none;
   color: #FFF;
   background-color: #EF411B;
@@ -83,7 +83,8 @@ h1 {
 }
 
 .topnav a.active {
-  color: #000;
+  background-color: D5330F;
+  font-weight: 700;
 }
 
 .topnav a:not(:last-child) {
