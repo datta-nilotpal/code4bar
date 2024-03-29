@@ -13,12 +13,6 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap');
 
-.logo {
-  padding: 0 10px;
-  width: 50px;
-  height: auto;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -28,6 +22,28 @@ header {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   font-family: 'Cormorant Garamond', serif;
+}
+
+.logo {
+  padding: 10px;
+  width: 50px;
+  height: auto;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.logoandh1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  position: relative;
+  padding-bottom: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .topnav {
