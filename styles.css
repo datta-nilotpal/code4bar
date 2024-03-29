@@ -29,7 +29,7 @@ header {
 
 .logo {
   padding: 5px 10px;
-  width: 50px;
+  width: 35px;
   height: auto;
 }
 
@@ -76,6 +76,8 @@ h1 {
 }
 
 .topnav a:hover, .topnav a.active {
+  text-decoration: underline;
+  text-decoration-color: #FFF;
   text-shadow: 0.5px 0.5px 0 #C0C0C0, -0.5px -0.5px 0 #C0C0C0, 0.5px -0.5px 0 #C0C0C0, -0.5px 0.5px 0 #C0C0C0;
 }
 
