@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const header = document.querySelector('header'); // Select the header
+  const header = document.querySelector('header');
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('nav a, .topnav a'); // Adjusted for specific HTML structure
+  const navLinks = document.querySelectorAll('nav a, .topnav a');
 
   function activateLinkOnScroll() {
-    let scrollPosition = window.scrollY + window.innerHeight / 2; // Adjust based on layout
+    let scrollPosition = window.scrollY + window.innerHeight / 2;
 
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top + window.scrollY;
@@ -30,12 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
     activateLinkOnScroll();
   });
 
-  window.addEventListener('resize', activateLinkOnScroll);
-
   activateLinkOnScroll();
-
-  const menuIcon = document.querySelector('.icon');
-  if (menuIcon) {
-    menuIcon.addEventListener('click', toggleResponsiveMenu);
-  }
 });
