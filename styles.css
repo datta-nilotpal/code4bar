@@ -13,8 +13,9 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap');
 
-.logo img{
-  width 50px;
+.logo {
+  padding: 0 10px;
+  width: 50px;
   height: auto;
 }
 
