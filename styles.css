@@ -28,7 +28,7 @@ header {
 }
 
 .logo {
-  padding: 10px;
+  padding: 5px 10px;
   width: 50px;
   height: auto;
 }
@@ -71,6 +71,7 @@ h1 {
   padding: 10px;
   color: #FFF;
   text-decoration: none;
+  border: 2px solid transparent;
   font-size: 15px;
 }
 
