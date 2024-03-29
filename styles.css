@@ -19,8 +19,9 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #FFF;
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  border: 1px solid #EF411B;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   font-family: 'Cormorant Garamond', serif;
   display: inline-flex;
@@ -106,7 +107,10 @@ h1 {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
   }
 }
 
