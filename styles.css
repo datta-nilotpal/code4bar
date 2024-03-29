@@ -49,11 +49,23 @@ h1 {
   overflow: hidden;
 }
 
-.topnav {
+//.topnav {
   display: flex;
   align-items: center;
   justify-content: start; 
   width: 100%;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  z-index: 1000;
 }
 
 .topnav a {
