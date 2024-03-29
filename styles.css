@@ -1,106 +1,142 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Basic Reset and Variables */
+:root {
+    --primary-color: #0056b3;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --light-gray: #f2f2f2;
+    --dark-gray: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 20px;
+    font-size: 16px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  position: fixed;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  top: 0;
-  z-index: 1000;
+/* Logo and Header Styles */
+.logo {
+    height: 50px;
+    width: auto;
 }
 
 .logoandh1 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  padding 0 10px;
-  position: relative;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.logo {
-  margin-right: 10px;
-  width: 30px;
-  height: auto;
+h1, h2, h3 {
+    color: var(--text-color);
 }
 
-h1 {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
-  color: #000;
-  font-size: 15px;
-  font-weight: 90;
-  letter-spacing: 2px;
-}
-
+/* Navigation */
 .topnav {
-  background-color: #333;
-  overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-gray);
+    padding: 0 10px;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    color: var(--light-gray);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav a:hover, .topnav a.active {
+    background-color: var(--primary-color);
+    color: white;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+.icon {
+    display: none;
 }
 
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
+/* Section Styling with Flexbox */
 section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  box-sizing: border-box;
-  text-align: center;
-  margin-top: 60px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
+.whyus-section, .faq-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.whyus-panel, .faq-item {
+    flex: 1 1 200px; /* Grow, shrink, base width */
+}
+
+/* Buttons */
+.hero-btn, .cta-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Advanced Responsive Design */
+@media screen and (max-width: 1024px) {
+    .topnav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+  
+    .topnav a.icon {
+        display: block;
+    }
+
+    .topnav.responsive a {
+        display: block;
+    }
+
+    .logoandh1 {
+        flex-direction: column;
+    }
+
+    .whyus-section, .faq-section {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topnav a {
+        text-align: left;
+        width: 100%;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+
