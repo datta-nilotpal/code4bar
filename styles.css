@@ -20,7 +20,7 @@ header {
   width: 100vw;
   z-index: 1000;
   background-color: #FFF;
-  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
   border-bottom: 1px solid #DDD;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   font-family: 'Cormorant Garamond', serif;
@@ -134,11 +134,11 @@ section {
   background-repeat: no-repeat;
 }
 
-.hero-h2, .hero-h3, .hero-p, .hero-btn {
+.hero-h2, .hero-h3, .hero-p {
   font-family: 'Cormorant Garamond', serif;
   color: #FFF;
   width: 100%;
-  padding: 50px;
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
@@ -161,7 +161,7 @@ section {
 .hero-btn {
   align-items: center;
   background-clip: padding-box;
-  background-color: #fa6400;
+  background-color: #EF411B;
   border: 1px solid transparent;
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -189,7 +189,7 @@ section {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #fb8332;
+  background-color: #FA6400;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
@@ -198,7 +198,7 @@ section {
 }
 
 .hero-btn:active {
-  background-color: #c85000;
+  background-color: #C85000;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
