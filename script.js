@@ -1,13 +1,3 @@
-// Toggle responsive navigation menu
-function toggleResponsiveMenu() {
-  var nav = document.getElementById("myTopnav");
-  if (nav.className === "topnav") {
-    nav.className += " responsive";
-  } else {
-    nav.className = "topnav";
-  }
-}
-
 document.addEventListener("DOMContentLoaded", function() {
   const header = document.querySelector('header'); // Select the header
   const sections = document.querySelectorAll('section[id]');
@@ -31,22 +21,19 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   window.addEventListener('scroll', function() {
-    // Change header background color when scrolled
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      header.style.backgroundColor = "#040112"; // Set header color on scroll
+      header.style.backgroundColor = "#040112";
     } else {
-      header.style.backgroundColor = "transparent"; // Reset header color when not scrolled
+      header.style.backgroundColor = "transparent";
     }
     
-    activateLinkOnScroll(); // Activate link on scroll
+    activateLinkOnScroll();
   });
 
-  window.addEventListener('resize', activateLinkOnScroll); // Ensure link activation adjusts on window resize
+  window.addEventListener('resize', activateLinkOnScroll);
 
-  // Initial link activation check
   activateLinkOnScroll();
 
-  // Attach toggle function to the responsive menu icon
   const menuIcon = document.querySelector('.icon');
   if (menuIcon) {
     menuIcon.addEventListener('click', toggleResponsiveMenu);
