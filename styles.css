@@ -131,18 +131,21 @@ section {
 }
 
 .hero-h2 {
+  color: #FFF;
   font-weight: 700;
   font-size: 45px;
   padding: 100px 50px 10px 50px;
 }
 
 .hero-h3 {
+  color: #FFF;
   font-weight: 500;
   font-size: 30px;
   padding: 10px 50px;
 }
 
 .hero-p {
+  color: #FFF;
   max-width: 600px;
   font-weight: 300;
   font-size: 15px;
