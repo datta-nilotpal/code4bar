@@ -96,6 +96,9 @@ h1 {
     float: right;
     display: block;
   }
+}
+
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -108,12 +111,7 @@ h1 {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-  }
-}
-
-  /* Remove margin-right for links in the responsive menu to ensure full width */
-  .topnav.responsive a:not(:last-child) {
-    margin-right: 0;
+    border-top: 1px solid #DDD;
   }
 }
 
