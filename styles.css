@@ -74,7 +74,7 @@ h1 {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .topnav a:hover {
@@ -179,7 +179,7 @@ section {
   justify-content: center;
   line-height: 1.25;
   min-height: 3rem;
-  margin-left: 10px;
+  margin-left: 1000px;
   padding: 10px; 50px;
   position: relative;
   text-decoration: none;
