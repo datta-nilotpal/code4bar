@@ -21,11 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   window.addEventListener('scroll', function() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      header.style.backgroundColor = "#040112";
-    } else {
-      header.style.backgroundColor = "transparent";
-    }
+    let scrollRange = window.innerHeight * 1.1; // 110vh
+    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    
+    // Calculate opacity based on scroll position within the first 110vh
+    let opacity = Math.min(scroll / scrollRange, 1);
+    header.style.backgroundColor = `rgba(4, 1, 18, ${opacity})`;
     
     activateLinkOnScroll();
   });
