@@ -1,142 +1,156 @@
-/* Google Fonts Import for Modern Web 3.0 Look */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* Comprehensive Style Adjustments */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Roboto:wght@400;500;700&display=swap');
 
-/* Web 3.0 Color Scheme and Styling */
 :root {
-    --color-primary-gradient-start: #073B4C;
-    --color-primary-gradient-end: #0A192F;
-    --color-secondary: #EF411B; /* Vibrant Shade from Logo */
-    --color-accent: #F0F4F8; /* Soft Neutral for Text */
-    --font-primary: 'Roboto', sans-serif; /* Clean and Modern Font */
-    --transition-speed: 0.4s;
-    --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    --transition-speed: 0.3s;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --color-primary: #F0F4F7; /* Light Neutral Background */
+    --color-secondary: #005792; /* Deep Ocean Blue */
+    --color-accent: #EF411B; /* Vibrant Coral */
+    --color-detail: #F2B90C; /* Sunlit Gold */
+    --color-light: #FFFFFF; /* Pure White */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Nunito', sans-serif;
 }
 
 body {
-    font-family: var(--font-primary);
-    color: var(--color-accent);
-    background: linear-gradient(to right, var(--color-primary-gradient-start), var(--color-primary-gradient-end));
     margin: 0;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-header, main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Navigation Bar Styling for Web 3.0 */
-.topnav {
-    background-color: transparent;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color var(--transition-speed);
-}
-
-.topnav:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Slight darken on hover */
-}
-
-.topnav a {
-    float: left;
-    color: var(--color-accent);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: color var(--transition-speed);
-}
-
-.topnav a:hover, .topnav a.active {
+    padding: 0;
+    font-family: var(--font-primary);
+    background-color: var(--color-primary);
     color: var(--color-secondary);
 }
 
+/* Enhanced Floating Header with Sleek Design */
+header {
+    background-color: var(--color-light);
+    color: var(--color-secondary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logoandh1 img.logo {
-    height: 50px; /* Responsive Logo Size */
-    width: auto;
-    transition: transform 0.3s ease;
+    height: 48px;
+    transition: transform var(--transition-speed);
 }
 
 .logoandh1 img.logo:hover {
-    transform: scale(1.1); /* Slight Logo Enlarge Effect */
+    transform: scale(1.1);
 }
 
 .logoandh1 h1 {
-    margin: 0;
-    font-size: 2rem;
+    font-family: var(--font-secondary);
+    color: var(--color-accent);
+    margin-left: 15px;
+    font-size: 1.8rem;
+}
+
+.topnav {
+    display: flex;
+    gap: 20px;
+}
+
+.topnav a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+    font-weight: 700;
+}
+
+.topnav a:hover {
     color: var(--color-accent);
 }
 
-/* Section Styling */
-section {
-    padding: 60px 20px;
-    transition: background-color var(--transition-speed), color var(--transition-speed);
-}
-
-.hero-btn, .cta-btn {
-    background-color: var(--color-secondary);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    transition: background-color var(--transition-speed), transform var(--transition-speed);
-    text-decoration: none;
-    display: inline-block;
-}
-
-.hero-btn:hover, .cta-btn:hover {
-    background-color: darken(var(--color-secondary), 10%);
-    transform: translateY(-2px);
-}
-
-/* Responsive Grid for 'whyus-section' */
-.whyus-panel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Section-Specific Styling */
+#hero-section {
+    background-image: linear-gradient(120deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+    color: var(--color-light);
+    padding: 150px 20px; /* Adjusted for fixed header */
     text-align: center;
 }
 
+#whyus-section, #faq-section, #cta-section {
+    padding: 60px 20px;
+}
+
+#whyus-section {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+#faq-section {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+#cta-section {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    text-align: center;
+}
+
+/* Distinctive Element Styling */
+.hero-btn, .cta-btn {
+    background-color: var(--color-light);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.hero-btn:hover, .cta-btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+/* Responsive Typography and Layouts */
 @media screen and (max-width: 768px) {
-    .topnav, .logoandh1 h1, .hero-btn, .cta-btn {
-        text-align: center;
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logoandh1 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: center;
     }
 
     .topnav a {
-        float: none;
-        display: block;
+        padding: 5px;
+        font-size: 0.9rem;
     }
 
-    .whyus-panel {
-        margin-bottom: 20px;
+    #hero-section, #whyus-section, #faq-section, #cta-section {
+        padding: 60px 15px;
+    }
+
+    .hero-btn, .cta-btn {
+        padding: 10px 25px;
     }
 }
 
-/* Implement 'fa-bars' icon for mobile menu toggle */
-.topnav .icon {
-    display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .topnav .icon {
-        display: block;
+@media screen and (max-width: 480px) {
+    .logoandh1 h1 {
+        font-size: 1.5rem;
     }
 
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+    .hero-btn, .cta-btn {
+        padding: 8px 20px;
+        font-size: 0.8rem;
     }
 }
