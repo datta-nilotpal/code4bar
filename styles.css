@@ -39,6 +39,7 @@ h1 {
   font-style: italic;
   font-size: 35px;
   letter-spacing: -1px;
+  text-decoration: none;
 }
 
 .logoandh1 {
@@ -68,10 +69,7 @@ h1 {
   font-weight: 200;
   text-transform: uppercase;
   padding: 10px;
-  border-radius: 5px;
-  border-style: none;
   color: #FFF;
-  cursor: pointer;
   text-decoration: none;
   font-size: 15px;
 }
