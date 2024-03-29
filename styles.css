@@ -134,10 +134,10 @@ section {
   background-repeat: no-repeat;
 }
 
-.hero-h2, .hero-h3 {
+.hero-h2, .hero-h3, hero-p {
+  font-family: 'Cormorant Garamond', serif;
   color: #FFF;
   width: 100%;
-  max-width: 600px;
   padding: 20px;
   box-sizing: border-box;
 }
