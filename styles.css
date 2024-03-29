@@ -15,6 +15,7 @@ html, body {
 }
 
 header {
+  margin: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,6 +43,7 @@ h1 {
 }
 
 .logoandh1 {
+  margin: 0;
   padding: 0px 20px;
   display: inline-flex;
   align-items: center;
@@ -76,13 +78,13 @@ h1 {
 }
 
 .topnav a:hover, .topnav a.active {
-  text-decoration: underline;
-  text-decoration-color: #FFF;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 3px
   text-shadow: 0.5px 0.5px 0 #C0C0C0, -0.5px -0.5px 0 #C0C0C0, 0.5px -0.5px 0 #C0C0C0, -0.5px 0.5px 0 #C0C0C0;
 }
 
 .topnav a:not(:last-child) {
-  margin-right: 200px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 600px) {
