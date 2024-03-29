@@ -24,6 +24,7 @@ header {
   border-bottom: 1px solid #DDD;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   font-family: 'Cormorant Garamond', serif;
+  text-shadow: 0 1px 0 #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: start;
@@ -127,4 +128,5 @@ section {
 
 #hero-section {
   background-image: url("bg.jpg");
+  background-size: cover;
 }
