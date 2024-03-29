@@ -66,10 +66,10 @@ h1 {
   float: left;
   display: block;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   text-transform: uppercase;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0 10px;
+  border-radius: 8px;
   border-style: none;
   color: #FFF;
   background-color: #EF411B;
@@ -86,7 +86,7 @@ h1 {
 
 .topnav a.active {
   background-color: D5330F;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .topnav a:not(:last-child) {
