@@ -117,10 +117,6 @@ h1 {
 
 body {
   padding-top: 50px;
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 section {
@@ -136,4 +132,12 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero-h2, .hero-h3 {
+  color: #FFF;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
 }
