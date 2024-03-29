@@ -1,32 +1,32 @@
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+// Toggle responsive navigation menu
+function toggleResponsiveMenu() {
+  var nav = document.getElementById("myTopnav");
+  if (nav.className === "topnav") {
+    nav.className += " responsive";
   } else {
-    x.className = "topnav";
+    nav.className = "topnav";
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+// Wait for the entire page to load before initializing scroll spy
+window.addEventListener('load', function() {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('nav a');
 
-  window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset;
+  function updateActiveLink() {
+    let index = sections.length;
 
-    sections.forEach(function(section) {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
+    while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
-      if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
-        const targetId = '#' + section.id;
-        navLinks.forEach(function(link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === targetId) {
-            link.classList.add('active');
-          }
-        });
-      }
-    });
-  });
+    navLinks.forEach((link) => link.classList.remove('active'));
+    navLinks[index].classList.add('active');
+  }
+
+  updateActiveLink(); // Run on load in case the user is not at the top of the page
+  window.addEventListener('scroll', updateActiveLink);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Attaching the toggle function to the menu icon
+  document.querySelector('.icon').addEventListener('click', toggleResponsiveMenu);
 });
