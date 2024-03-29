@@ -23,7 +23,7 @@ header {
   font-family: 'Cormorant Garamond', serif;
   display: inline-flex;
   align-items: center;
-  justify-content: centre;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
 }
