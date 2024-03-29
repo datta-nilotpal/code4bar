@@ -1,12 +1,13 @@
-/* Google Fonts Import for Roboto: Big, Clean Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+/* Google Fonts Import for Modern Web 3.0 Look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-/* Primary Style Definitions */
+/* Web 3.0 Color Scheme and Styling */
 :root {
-    --color-primary: #073B4C; /* Deep, Dark Slate for a Professional Background */
-    --color-secondary: #EF411B; /* Vibrant Shade from Logo for Highlights and Buttons */
-    --color-accent: #F0F4F8; /* Light Off-White for Text */
-    --font-primary: 'Roboto', sans-serif; /* Big, Clean Font */
+    --color-primary-gradient-start: #073B4C;
+    --color-primary-gradient-end: #0A192F;
+    --color-secondary: #EF411B; /* Vibrant Shade from Logo */
+    --color-accent: #F0F4F8; /* Soft Neutral for Text */
+    --font-primary: 'Roboto', sans-serif; /* Clean and Modern Font */
     --transition-speed: 0.4s;
     --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -14,25 +15,33 @@
 body {
     font-family: var(--font-primary);
     color: var(--color-accent);
-    background-color: var(--color-primary);
+    background: linear-gradient(to right, var(--color-primary-gradient-start), var(--color-primary-gradient-end));
     margin: 0;
-    padding: 0;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
-header, section {
-    min-height: 100vh; /* Full viewport height for each section */
-    padding: 20px;
+header, main {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
+    justify-content: center;
+    padding: 20px;
 }
 
-/* Top Navigation */
+/* Navigation Bar Styling for Web 3.0 */
 .topnav {
-    background-color: var(--color-primary);
+    background-color: transparent;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color var(--transition-speed);
+}
+
+.topnav:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Slight darken on hover */
 }
 
 .topnav a {
@@ -42,54 +51,83 @@ header, section {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: color var(--transition-speed);
 }
 
-.topnav a:hover {
-    background-color: var(--color-secondary);
+.topnav a:hover, .topnav a.active {
+    color: var(--color-secondary);
+}
+
+.logoandh1 img.logo {
+    height: 50px; /* Responsive Logo Size */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logoandh1 img.logo:hover {
+    transform: scale(1.1); /* Slight Logo Enlarge Effect */
+}
+
+.logoandh1 h1 {
+    margin: 0;
+    font-size: 2rem;
     color: var(--color-accent);
 }
 
-.topnav a.icon {
-    display: none; /* Adjustments for mobile navigation will be required */
-}
-
-/* Main Content Styling */
-h1, h2, h3, p {
-    color: var(--color-accent); /* Ensures text stands out against the primary background */
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
 .hero-btn, .cta-btn {
     background-color: var(--color-secondary);
-    border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color var(--transition-speed);
 }
 
 .hero-btn:hover, .cta-btn:hover {
     background-color: darken(var(--color-secondary), 10%);
+    transform: translateY(-2px);
 }
 
-/* Responsive Design Adjustments */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), .topnav a.icon {
-        display: none;
+/* Responsive Grid for 'whyus-section' */
+.whyus-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav, .logoandh1 h1, .hero-btn, .cta-btn {
+        text-align: center;
     }
 
-    .topnav a.icon {
-        float: right;
+    .topnav a {
+        float: none;
         display: block;
     }
+
+    .whyus-panel {
+        margin-bottom: 20px;
+    }
+}
+
+/* Implement 'fa-bars' icon for mobile menu toggle */
+.topnav .icon {
+    display: none;
 }
 
 @media screen and (max-width: 600px) {
+    .topnav .icon {
+        display: block;
+    }
+
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
         position: absolute;
