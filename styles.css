@@ -104,8 +104,15 @@ main > section {
 #hero-section h2 {
     color: #FFF;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 80px;
     max-width: 90%;
     margin: 0px;
-    padding: 150px 50px 10px 50px;
+}
+
+#hero-section h2 {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 65px;
+    max-width: 90%;
+    margin: 0px;
 }
