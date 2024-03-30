@@ -88,11 +88,7 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav {
-    display: none;
-  }
-  .logoandh1 {
-    justify-content: center;
+	@@ -96,134 +81,80 @@ h1 {
   }
 }
 
