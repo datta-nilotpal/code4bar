@@ -120,7 +120,9 @@ section {
 
 .hero-container {
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
+
 .hero-h2 {
   color: #FFF;
   font-weight: 700;
