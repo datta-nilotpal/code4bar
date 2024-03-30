@@ -156,6 +156,7 @@ section {
   }
   hero-btn {
     margin: 10px 50px;
+    width: 100%;
   }
 }
 
