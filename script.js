@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   window.addEventListener('scroll', function() {
-    let scrollRange = window.innerHeight * 1; // 100vh
+    let scrollRange = window.innerHeight * 0.3; // 30vh
     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
     
     // Calculate opacity based on scroll position within the first 110vh
