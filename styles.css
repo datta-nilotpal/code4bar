@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 /* Basic reset for margins and paddings */
 * {
     margin: 0;
@@ -6,7 +9,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -33,6 +36,12 @@ header {
 
 .logoandh1 img {
     margin-right: 10px;
+    height: 35px; /* Updated size */
+}
+
+.logoandh1 h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px; /* Updated size */
 }
 
 .menu {
@@ -43,13 +52,17 @@ header {
     text-decoration: none;
     color: black;
     margin-left: 20px;
-    transition: font-weight 0.3s ease, text-decoration 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; /* Updated size */
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; /* Initial state with transparent border */
+    padding-bottom: 5px; /* To ensure border does not overlap text */
 }
 
 .menu-item:hover,
 .menu-item.active {
-    font-weight: bold;
-    text-decoration: underline;
+    text-shadow: 1px 1px 0px #000; /* Using text shadow for boldness */
+    border-bottom: 2px solid black; /* Updated underline to border-bottom */
 }
 
 /* Media query for mobile devices */
@@ -61,4 +74,13 @@ header {
     header {
         justify-content: center;
     }
+}
+
+/* Full viewport height for sections */
+main > section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
