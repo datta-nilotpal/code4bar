@@ -21,7 +21,6 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 60px;
     background-color: #FFF;
     top: 0;
     left: 0;
@@ -89,4 +88,24 @@ main > section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#hero-section {
+  background-image: url("background.svg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 20px;
+}
+
+.hero-section h2 {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 45px;
+    max-width: 90%;
+    margin: 0px;
+    padding: 150px 50px 10px 50px;
 }
