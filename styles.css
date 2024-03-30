@@ -146,12 +146,12 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-  hero-h2 {
+  .hero-h2 {
     text-align: center;
     padding: 0px 20px 10px 20px;
     backdrop-filter: blur(10px);
   }
-  hero-h3, hero-p {
+  .hero-h3, .hero-p {
     text-align: centre;
     padding: 0 20px;
     backdrop-filter: blur(10px);
@@ -159,44 +159,46 @@ section {
 }
 
 .hero-btn {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #EF411B;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #1ebe5f;
+  border-radius: 56px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
+  align-items: center;
   justify-content: center;
-  line-height: 1.25;
-  min-height: 3rem;
-  margin-left: 10px;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
   position: relative;
+  margin-left: 0;
+  padding: 12px 24px;
+  text-align: center;
   text-decoration: none;
-  transition: all 250ms;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #FA6400;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .hero-btn:hover {
-  transform: translateY(-1px);
+  background-color: #25d366;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
 
 .hero-btn:active {
-  background-color: #C85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
+  transform: translateY(2px);
+  transition-duration: .35s;
 }
