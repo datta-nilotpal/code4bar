@@ -78,9 +78,9 @@ h1 {
 }
 
 .topnav a:hover, .topnav a.active {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 2px solid #EF411B;
   padding-bottom: 3px
-  text-shadow: 0.5px 0.5px 0 #C0C0C0, -0.5px -0.5px 0 #C0C0C0, 0.5px -0.5px 0 #C0C0C0, -0.5px 0.5px 0 #C0C0C0;
+  text-shadow: 0.5px 0.5px 0 #EF411B, -0.5px -0.5px 0 #EF411B, 0.5px -0.5px 0 #EF411B, -0.5px 0.5px 0 #EF411B;
 }
 
 .topnav a:not(:last-child) {
@@ -115,13 +115,18 @@ section {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 120px 20px;
 }
 
 .hero-h2 {
   color: #FFF;
   font-weight: 700;
   font-size: 45px;
+  max-width: 90%;
   margin: 0px;
   padding: 150px 50px 10px 50px;
 }
@@ -131,17 +136,20 @@ section {
   font-weight: 500;
   font-size: 30px;
   font-style: italic;
+  max-width: 90%;
   margin: 0;
   padding: 0 50px 10px 50px;
 }
 
 .hero-p {
+  display: block;
   color: #FFF;
   max-width: 600px;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.3;
-  margin: 0;
+  max-width: 90%;
+  margin: 20 auto;
   padding: 0px 0 0 50px;
 }
 
