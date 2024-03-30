@@ -45,6 +45,9 @@ header {
 .logoandh1 h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -1px;
 }
 
 .menu {
