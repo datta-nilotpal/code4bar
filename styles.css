@@ -119,8 +119,9 @@ section {
 }
 
 .hero-container {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 150px 50px 10px 50px;
 }
 
 .hero-h2 {
@@ -128,7 +129,6 @@ section {
   font-weight: 700;
   font-size: 45px;
   margin: 0px;
-  padding: 150px 50px 10px 50px;
 }
 
 .hero-h3 {
