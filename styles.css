@@ -15,6 +15,7 @@ html, body {
 }
 
 header {
+  color: #040112;
   height: 60px;
   position: fixed;
   top: 0;
@@ -90,9 +91,6 @@ h1 {
 @media screen and (max-width: 600px) {
   .topnav {
     display: none;
-  }
-  header {
-    text-align: center;
   }
   .logoandh1 {
     justify-content: center;
