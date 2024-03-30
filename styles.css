@@ -119,27 +119,24 @@ section {
 
 .hero-h2 {
   color: #FFF;
-  padding: 0;
   font-weight: 700;
   font-size: 45px;
-  padding: 100px 50px 10px 50px;
+  padding: 100px 50px 5px 50px;
 }
 
 .hero-h3 {
   color: #FFF;
-  padding: 0;
   font-weight: 500;
   font-size: 30px;
-  padding: 10px 50px;
+  padding: 5px 50px;
 }
 
 .hero-p {
-  padding: 0;
   color: #FFF;
   max-width: 600px;
   font-weight: 300;
-  font-size: 15px;
-  padding: 10px 50px;
+  font-size: 20px;
+  padding: 0 px 50px;
 }
 
 .hero-btn {
