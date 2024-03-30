@@ -26,6 +26,7 @@ header {
   justify-content: start;
   width: 100%;
   overflow: hidden;
+  transition: top 0.3s ease-in-out;
 }
 
 .logo {
