@@ -149,10 +149,12 @@ section {
   hero-h2 {
     text-align: center;
     padding: 0px 20px 10px 20px;
+    backdrop-filter: blur(10px);
   }
   hero-h3, hero-p {
     text-align: centre;
     padding: 0 20px;
+    backdrop-filter: blur(10px);
   }
 }
 
