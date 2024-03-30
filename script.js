@@ -1,37 +1,36 @@
-<script>
 document.addEventListener('DOMContentLoaded', function () {
     const menuItems = document.querySelectorAll('.menu-item');
 
+    // Function to set the active menu item
     function setActiveMenuItem() {
+        let activeSet = false;
         const currentHash = window.location.hash;
-        let foundActive = false;
 
-        menuItems.forEach(item => {
+        menuItems.forEach((item, index) => {
+            // Remove active class from all items
             item.classList.remove('active');
-            if (item.getAttribute('href') === currentHash) {
-                item.classList.add('active');
-                foundActive = true;
+
+            // Set the first item as active if no hash is present or match is found
+            if (!activeSet) {
+                if (currentHash && item.getAttribute('href') === currentHash) {
+                    item.classList.add('active');
+                    activeSet = true;
+                } else if (!currentHash && index === 0) {
+                    item.classList.add('active');
+                    activeSet = true;
+                }
             }
         });
-
-        // Set the first menu item as active if no hash or no match is found
-        if (!foundActive && !currentHash) {
-            menuItems[0].classList.add('active');
-        }
     }
 
+    // Initialize the correct active menu item
+    setActiveMenuItem();
+
+    // Listen to click events on menu items for smooth scrolling
     menuItems.forEach(item => {
         item.addEventListener('click', function (e) {
-            // Prevent the default jump on click
-            e.preventDefault();
+            e.preventDefault(); // Prevent default anchor click behavior
 
-            // Remove 'active' class from all menu items before setting it on the clicked one
-            menuItems.forEach(item => item.classList.remove('active'));
-
-            // Add 'active' class to clicked item
-            this.classList.add('active');
-
-            // Smooth scroll to the target section
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
 
@@ -41,14 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     'top': targetSection.offsetTop
                 });
             }
+
+            // Update the active class on click
+            setActiveMenuItem();
         });
     });
 
-    // Set the correct active menu item on page load
-    setActiveMenuItem();
-
-    // Optionally, listen for hash changes to set active menu item
-    // Useful for forward/backward navigation in history
+    // Optionally, update the active menu item on hash change
     window.addEventListener('hashchange', setActiveMenuItem);
 });
-</script>
