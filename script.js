@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector('header');
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('nav a, .topnav a');
 
@@ -20,16 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  window.addEventListener('scroll', () => {
-    let scrollRange = window.innerHeight * 0.3;
-    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let opacity = Math.min(scroll / scrollRange, 1);
-    header.style.backgroundColor = `rgba(4, 1, 18, ${opacity})`;
-    
-    activateLinkOnScroll();
-  });
-
-  activateLinkOnScroll();
+  window.addEventListener('scroll', activateLinkOnScroll);
+  activateLinkOnScroll(); // Activate on initial load
 
   // Adding smooth scroll behavior for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
