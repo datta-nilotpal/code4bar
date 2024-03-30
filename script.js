@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+  // Select elements
   const header = document.querySelector('header');
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('nav a, .topnav a');
+  
+  // Initialize last scroll position
+  let lastScrollTop = 0;
 
   function activateLinkOnScroll() {
     let scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -21,27 +25,37 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   window.addEventListener('scroll', function() {
-    let scrollRange = window.innerHeight * 0.3; // 30vh
+    let scrollRange = window.innerHeight * 0.3; // 30% of the viewport height
     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
     
-    // Calculate opacity based on scroll position within the first 110vh
+    // Calculate header background opacity
     let opacity = Math.min(scroll / scrollRange, 1);
     header.style.backgroundColor = `rgba(4, 1, 18, ${opacity})`;
+
+    // Determine scroll direction
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop) {
+      // Downscroll code
+      header.style.top = "0"; // Move header back to its original position
+    } else {
+      // Upscroll code
+      header.style.top = "-60px"; // Hide the header
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
     
     activateLinkOnScroll();
   });
 
   activateLinkOnScroll();
-});
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
     });
+  });
 });
