@@ -148,17 +148,16 @@ section {
 @media screen and (max-width: 600px) {
   .hero-h2 {
     text-align: center;
-    padding: 0px 20px 10px 20px;
-    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    backface-visibility: hidden;
   }
   .hero-h3, .hero-p {
     text-align: centre;
     padding: 0 20px;
-    backdrop-filter: blur(10px);
+    backface-visibility: hidden;
   }
   hero-btn {
-    text-align: centre;
-    padding: 10px 50px;
+    margin: 10px 50px;
   }
 }
 
@@ -166,23 +165,22 @@ section {
   appearance: none;
   backface-visibility: hidden;
   background-color: #1ebe5f;
-  border-radius: 56px;
+  border-radius: 25px;
   border-style: none;
-  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: normal;
   line-height: 1.5;
   outline: none;
   overflow: hidden;
   position: relative;
-  margin: 0;
-  padding: 10px 50px;
+  margin: 20px 50px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   transform: translate3d(0, 0, 0);
