@@ -1,64 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  font-size: 100%; /* Ensures responsiveness and accessibility */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-html, body {
+body {
   margin: 0;
   padding: 0;
+  font-family: 'Cormorant Garamond', serif;
   width: 100%;
-  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box; /* Applies box-sizing to all elements */
 }
 
 header {
-  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  font-family: 'Cormorant Garamond', serif;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: start;
   width: 100%;
-  overflow: hidden;
+  height: 60px;
   transition: top 0.3s ease-in-out;
 }
 
+.logo, .logoandh1, .topnav, .topnav a, section, #hero-section, .hero-h2, .hero-h3, .hero-p, .hero-btn {
+  padding: 0 10px; /* Applies a default padding, adjust as needed */
+}
+
 .logo {
-  padding: 0 10px;
   width: 35px;
   height: auto;
 }
 
-h1 {
+h1, .topnav a {
+  font-family: 'Roboto', sans-serif;
   color: #FFF;
+  text-decoration: none;
+}
+
+h1 {
   font-weight: 700;
   font-style: italic;
   font-size: 35px;
   letter-spacing: -1px;
 }
 
-.logoandh1 {
-  padding: 0px 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  text-decoration: none;
-}
-
 .topnav {
   position: fixed;
   right: 0;
-  padding-right: 10px;
-  width: auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -66,25 +61,15 @@ h1 {
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  font-family: 'Roboto', sans-serif;
   font-weight: 200;
   text-transform: uppercase;
-  padding: 10px;
-  color: #FFF;
-  text-decoration: none;
   font-size: 15px;
+  padding: 10px;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 .topnav a:hover, .topnav a.active {
   border-bottom: 2px solid #EF411B;
-  padding-bottom: 3px
-  text-shadow: 0.5px 0.5px 0 #EF411B, -0.5px -0.5px 0 #EF411B, 0.5px -0.5px 0 #EF411B, -0.5px 0.5px 0 #EF411B;
-}
-
-.topnav a:not(:last-child) {
-  margin-right: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -96,134 +81,80 @@ h1 {
   }
 }
 
-body {
-  font-family: 'Cormorant Garamond', serif;
-}
-
 section {
   width: 100vw;
   height: 100vh;
   padding-top: 60px;
-  box-sizing: border-box;
 }
 
 #hero-section {
-  background-image: url("background.svg");
+  background: url("background.svg") left top no-repeat;
   background-size: cover;
-  background-position: left top;
-  background-repeat: no-repeat;
-  padding-top: 60px;
   display: flex;
   flex-direction: column;
   padding: 120px 20px;
 }
 
-.hero-h2 {
+.hero-h2, .hero-h3, .hero-p {
   color: #FFF;
+}
+
+.hero-h2 {
   font-weight: 700;
   font-size: 45px;
   max-width: 90%;
-  margin: 0px;
-  padding: 150px 50px 10px 50px;
+  padding: 150px 50px 10px;
 }
 
 .hero-h3 {
-  color: #FFF;
   font-weight: 500;
   font-size: 30px;
   font-style: italic;
-  max-width: 90%;
-  margin: 0;
-  padding: 0 50px 10px 50px;
+  padding: 0 50px 10px;
 }
 
 .hero-p {
-  display: block;
-  color: #FFF;
   max-width: 600px;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.3;
-  margin: 20 auto;
-  padding: 0px 0 0 50px;
+  margin: 20px auto;
+  padding-left: 50px;
 }
 
 .hero-btn {
-  appearance: none;
-  backface-visibility: hidden;
   background-color: #EF411B;
   border-radius: 25px;
-  border-style: none;
-  box-sizing: border-box;
   color: #FFF;
-  cursor: pointer;
-  display: block;
-  min-height: 30px;
-  max-width: 300px;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  display: inline-flex;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: normal;
-  line-height: 1.5;
-  outline: none;
-  overflow: hidden;
-  position: relative;
-  margin: 20px 50px;
   padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  transform: translate3d(0, 0, 0);
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: top;
-  white-space: nowrap;
-}
-
-.hero-btn img {
-  margin-right: 8px;
+  margin: 20px 50px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 .hero-btn:hover {
   background-color: #F04F2A;
-  opacity: 1;
-  transform: translateY(0);
-  transition-duration: .35s;
-  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  box-shadow: rgba(39, 174, 96, 0.2) 0 6px 12px;
 }
 
 .hero-btn:active {
   transform: translateY(2px);
-  transition-duration: .35s;
 }
 
 @media screen and (max-width: 600px) {
-  #hero-section {
-    align-items: center;
-    justify-content: center;
-  }
   .hero-h2 {
-    justify-content: center;
-    padding: 10px 20px;
-    font-weight: 600;
     font-size: 30px;
+    padding: 10px 20px;
   }
   .hero-h3 {
-    justify-content: center;
-    padding: 0 20px;
-    font-weight: 400;
     font-size: 20px;
+    padding: 0 20px;
   }
   .hero-p {
-    justify-content: center;
-    padding: 0 20px;
     font-size: 15px;
-  }
-  hero-btn {
-    margin: 20px 10px;
+    padding: 0 20px;
   }
 }
