@@ -104,15 +104,15 @@ main > section {
 #hero-section h2 {
     color: #FFF;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 120px;
     max-width: 90%;
     margin: 0px;
 }
 
-#hero-section h2 {
+#hero-section p {
     color: #FFF;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 100px;
     max-width: 90%;
     margin: 0px;
 }
