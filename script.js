@@ -1,14 +1,40 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Select elements
   const header = document.querySelector('header');
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('nav a, .topnav a');
-  
-  // Initialize last scroll position
   let lastScrollTop = 0;
+
+  window.addEventListener('scroll', function() {
+    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // When scrolling down or stopped, show the header
+    if (currentScrollTop < lastScrollTop || currentScrollTop <= 0) {
+      header.style.top = "0";
+    } else {
+      // When scrolling up, hide the header
+      header.style.top = "-60px";
+    }
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Avoid negative values
+
+    // Handle header opacity based on scroll position for transparency effect
+    let scrollRange = window.innerHeight * 0.3; // 30vh as in the original functionality
+    let opacity = Math.min(currentScrollTop / scrollRange, 1);
+    header.style.backgroundColor = `rgba(4, 1, 18, ${opacity})`;
+  });
+
+  // Smooth scroll and link activation as previously implemented
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 
   function activateLinkOnScroll() {
     let scrollPosition = window.scrollY + window.innerHeight / 2;
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a, .topnav a');
 
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top + window.scrollY;
@@ -24,38 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  window.addEventListener('scroll', function() {
-    let scrollRange = window.innerHeight * 0.3; // 30% of the viewport height
-    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
-    
-    // Calculate header background opacity
-    let opacity = Math.min(scroll / scrollRange, 1);
-    header.style.backgroundColor = `rgba(4, 1, 18, ${opacity})`;
-
-    // Determine scroll direction
-    let st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > lastScrollTop) {
-      // Downscroll code
-      header.style.top = "0"; // Move header back to its original position
-    } else {
-      // Upscroll code
-      header.style.top = "-60px"; // Hide the header
-    }
-    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-    
-    activateLinkOnScroll();
-  });
-
+  window.addEventListener('scroll', activateLinkOnScroll);
   activateLinkOnScroll();
-  
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
 });
