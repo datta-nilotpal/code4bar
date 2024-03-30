@@ -21,10 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   window.addEventListener('scroll', function() {
-    let scrollRange = window.innerHeight * 0.3; // 30vh
+    let scrollRange = window.innerHeight * 0.3;
     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
-    
-    // Calculate opacity based on scroll position within the first 110vh
     let opacity = Math.min(scroll / scrollRange, 1);
     header.style.backgroundColor = `rgba(4, 1, 18, ${opacity})`;
     
