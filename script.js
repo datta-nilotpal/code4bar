@@ -14,19 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
           link.classList.remove('active');
           if (link.getAttribute('href') === '#' + section.id) {
             link.classList.add('active');
-          }
-        });
-      }
+	@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
   window.addEventListener('scroll', function() {
-    let scrollRange = window.innerHeight * 0.1;
+    let scrollRange = window.innerHeight * 0.3;
     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
     let opacity = Math.min(scroll / scrollRange, 1);
-    header.style.backgroundColor = `rgba(4, 1, 18, ${opacity})`;
-    
-    activateLinkOnScroll();
+	@@ -30,16 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   activateLinkOnScroll();
@@ -43,4 +39,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
