@@ -121,14 +121,14 @@ section {
   color: #FFF;
   font-weight: 700;
   font-size: 45px;
-  padding: 100px 50px 5px 50px;
+  padding: 100px 50px 0px 50px;
 }
 
 .hero-h3 {
   color: #FFF;
   font-weight: 500;
   font-size: 30px;
-  padding: 5px 50px;
+  padding: 0 50px;
 }
 
 .hero-p {
