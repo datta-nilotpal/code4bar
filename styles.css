@@ -156,6 +156,10 @@ section {
     padding: 0 20px;
     backdrop-filter: blur(10px);
   }
+  hero-btn {
+    text-align: centre;
+    padding: 10px 50px;
+  }
 }
 
 .hero-btn {
@@ -177,8 +181,8 @@ section {
   outline: none;
   overflow: hidden;
   position: relative;
-  margin-left: 0;
-  padding: 12px 24px;
+  margin: 0;
+  padding: 10px 50px;
   text-align: center;
   text-decoration: none;
   transform: translate3d(0, 0, 0);
