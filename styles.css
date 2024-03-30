@@ -122,14 +122,16 @@ section {
   color: #FFF;
   font-weight: 700;
   font-size: 45px;
-  padding: 100px 50px 0px 50px;
+  margin: 0px;
+  padding: 150px 50px 10px 50px;
 }
 
 .hero-h3 {
-  margin: 0;
   color: #FFF;
   font-weight: 500;
   font-size: 30px;
+  font-style: italic;
+  margin: 0;
   padding: 0 50px;
 }
 
