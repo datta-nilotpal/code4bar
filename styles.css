@@ -113,11 +113,14 @@ section {
 #hero-section {
   background-image: url("background.svg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   justify-content: center;
 }
 
+.hero-container {
+  -webkit-backdrop-filter: blur(10px);
+}
 .hero-h2 {
   color: #FFF;
   font-weight: 700;
@@ -155,7 +158,7 @@ section {
     padding: 0 20px;
   }
   hero-btn {
-    margin: 10px 50px;
+    margin: 10px 20px;
   }
 }
 
