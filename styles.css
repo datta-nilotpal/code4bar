@@ -214,6 +214,7 @@ h1 {
 
 #faq-section h2 {
 	padding: 40px 0;
+	line-height: 1.5;
 	text-align: center;
 	font-weight: 300;
 	font-style: normal;
@@ -246,6 +247,7 @@ h1 {
 #cta-section h2 {
 	margin-top: 40px;
 	max-width: 75%;
+	line-height: 1.5; 
     	color: #FFF;
 	font-family: "Poppins", sans-serif;
 	backface-visibility: hidden;
@@ -329,11 +331,11 @@ footer p {
 }
 
 @media (max-width: 768px) {	
-	#hero-section h2 {
+	#hero-section h2, #faq-section h2, #cta-section h2 {
 		font-size: 3em;
 	}
 	
-	#hero-section h3 {
+	#hero-section h3, #cta-section p {
 		font-size: 1.5em;
 	}
 }
