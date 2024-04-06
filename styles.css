@@ -69,16 +69,6 @@ h1 {
 	width: 100%
 }
 
-//@-webkit-keyframes slidein {
-	from {background-position: top; background-size:3000px; }
-	to {background-position: -100px 0px;background-size:2750px;}
-}
-
-//@keyframes slidein {
-	from {background-position: top;background-size:3000px; }
-	to {background-position: -100px 0px;background-size:2750px;}
-}
-
 .hero-container {
 	display: flex;
 	flex-direction: column;
@@ -244,6 +234,7 @@ h1 {
 }
 
 #cta-section {
+	border-top: 4px solid #211AF0;
 	background: #000;
 	min-height: 50vh;
 	display:flex;
