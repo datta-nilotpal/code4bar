@@ -1,1 +1,1 @@
-// Look maa, no Jacascript!
+// Look maa, no Javascript!
