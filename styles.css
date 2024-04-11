@@ -219,7 +219,7 @@ h1 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-style: normal;
-   	font-size: 1.5em;
+   	font-size: 1.2em;
 	line-height: 1.5;
 	padding: 5px 0;
 	text-align: left;
@@ -230,7 +230,7 @@ h1 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-   	font-size: 1.5em;
+   	font-size: 1.2em;
 	line-height: 1.5;
 	text-align: left;
 }
@@ -251,7 +251,7 @@ h1 {
 	padding: 40px 0;
 	line-height: 1.5;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 500;
 	font-style: normal;
     	font-size: 3em;
 	line-height: 1.15;
@@ -263,19 +263,19 @@ h1 {
 }
 
 #faq-section h3 {
-    	font-size: 1.5em;
+    	font-size: 1.2em;
 	line-height: 1.5;
 	padding: 10px 0;
 }
 
 #faq-section p {
-    	font-size: 1.5em;
+    	font-size: 1.2em;
 	line-height: 1.5;
 }
 
 .faq-item .faq-list {
 	padding: 20px 0;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	line-height: 1.5;
 }
 
@@ -388,6 +388,7 @@ footer p {
 		flex-direction: column;
 	}
 	.whyus-card h3, .whyus-card p {
+		font-size: 1.5em;
 		text-align: center;
 	}
 	.whyus-card img {
@@ -396,5 +397,8 @@ footer p {
 	}
 	#faq-section {
 		width: 75%;
+	}
+	#faq-section h3, #faq-section p, .faq-item .faq-list {
+		font-size: 1.5em;
 	}
 }
