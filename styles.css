@@ -175,10 +175,10 @@ h1 {
 
 #whyus-section {
 	background: #DBE9F4;
+	padding: 2em;
 }
 
 .whyus-container {
-	padding: 2em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
