@@ -376,8 +376,9 @@ footer p {
 	}
 	.whyus-card h3, .whyus-card p {
 		text-align: center;
-	.whyus-card img {
-		padding: 0;
 	}
+	.whyus-card img {
+		padding-right: 0;
+		padding-bottom: 10px;
 	}
 }
