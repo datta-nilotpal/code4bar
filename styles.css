@@ -148,6 +148,7 @@ h1 {
 
 .hero-btn img {
 	width: 20px;
+	height: auto;
 	vertical-align: middle;
 	width: auto;
 	padding-right: 7px;
