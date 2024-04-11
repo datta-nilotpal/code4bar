@@ -282,14 +282,29 @@ h1 {
 }
 
 #cta-section {
-	border-top: 8px solid transparent;
+	position: relative;
+	border-top: 5px solid transparent;
 	border-image: linear-gradient(to right, #1A81EF 0%, #1A81EF 40%, #211AF0 50%, #1A81EF 60%, #1A81EF 100%) 1;
 	background: #000;
-	min-height: 50vh;
+	min-height: 60vh;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+#cta-section::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 30px solid #000;
+  z-index: 1;
 }
 
 #cta-section h2 {
