@@ -1,4 +1,3 @@
-<script>
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -18,4 +17,3 @@ document.addEventListener('DOMContentLoaded', function() {
     const whyUsSection = document.querySelector('#whyus-section');
     observer.observe(whyUsSection);
 });
-</script>
