@@ -274,7 +274,7 @@ h1 {
 }
 
 .faq-item .faq-list {
-	padding: 20px 0;
+	padding-left: 25px;
 	font-size: 1.2em;
 	line-height: 1.5;
 }
