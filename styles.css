@@ -267,6 +267,10 @@ h1 {
 	line-height: 1.5;
 }
 
+.faq-item .faq-list {
+    padding-left: 20px;
+}
+
 #cta-section {
 	border-top: 5px solid #1A81EF;
 	background: #000;
