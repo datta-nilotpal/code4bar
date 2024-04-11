@@ -178,7 +178,7 @@ h1 {
 }
 
 .whyus-container {
-	padding: auto;
+	padding: 2em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
