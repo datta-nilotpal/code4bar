@@ -268,7 +268,7 @@ h1 {
 }
 
 #cta-section {
-	border-top: 2px solid #1A81EF;
+	border-top: 5px solid #1A81EF;
 	background: #000;
 	min-height: 50vh;
 	display:flex;
