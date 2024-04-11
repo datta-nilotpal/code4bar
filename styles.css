@@ -185,7 +185,7 @@ h1 {
 
 .whyus-card {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: center;
 	width: 40%;
     	margin: 4em 2em;
@@ -202,7 +202,15 @@ h1 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-style: normal;
-   	 font-size: 0.75em;
+   	font-size: 1em;
+}
+
+.whyus-card p {
+	color: #000;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+   	font-size: 1em;
 }
 
 .whyus-card img {
