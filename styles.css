@@ -219,7 +219,9 @@ h1 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-style: normal;
-   	font-size: 1em;
+   	font-size: 1.5em;
+	line-height: 1.5;
+	padding: 5px 0;
 	text-align: left;
 }
 
@@ -228,7 +230,8 @@ h1 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-   	font-size: 1em;
+   	font-size: 1.5em;
+	line-height: 1.5;
 	text-align: left;
 }
 
@@ -268,7 +271,7 @@ h1 {
 }
 
 .faq-item .faq-list {
-    padding-left: 20px;
+    padding: 20px;
 }
 
 #cta-section {
