@@ -371,6 +371,7 @@ footer p {
 		font-size: 1.5em;
 	}
 	.whyus-card {
+		width: 75%;
 		flex-direction: column;
 	}
 	.whyus-card h3, .whyus-card p {
