@@ -274,7 +274,9 @@ h1 {
 }
 
 .faq-item .faq-list {
-    padding: 20px 0;
+	padding: 20px 0;
+	font-size: 1.5em;
+	line-height: 1.5;
 }
 
 #cta-section {
