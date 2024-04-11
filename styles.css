@@ -203,6 +203,7 @@ h1 {
 	font-weight: 500;
 	font-style: normal;
    	font-size: 1em;
+	text-align: left;
 }
 
 .whyus-card p {
@@ -211,6 +212,7 @@ h1 {
 	font-weight: 300;
 	font-style: normal;
    	font-size: 1em;
+	text-align: left;
 }
 
 .whyus-card img {
