@@ -147,7 +147,7 @@ h1 {
 }
 
 .hero-btn img {
-	height: 24px;
+	width: 50px;
 	vertical-align: middle;
 	width: auto;
 	padding-right: 7px;
@@ -236,7 +236,7 @@ h1 {
 }
 
 .whyus-card img {
-	height: 100px;
+	height: 50px;
 	width:	auto;
 	padding-right: 20px;
 }
