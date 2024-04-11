@@ -178,19 +178,20 @@ h1 {
 }
 
 .whyus-container {
+	padding: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
 }
 
 .whyus-card {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	width: 40%;
     	margin: 4em 2em;
-	padding: 1em;
+	padding: auto;
 	text-align: center;
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 16px;
