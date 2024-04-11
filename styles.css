@@ -184,6 +184,9 @@ h1 {
 }
 
 .whyus-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 40%;
     	margin: 4em 2em;
 	padding: 1em;
