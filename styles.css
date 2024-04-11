@@ -274,8 +274,9 @@ h1 {
 }
 
 .faq-list {
-	list-style-position: inside;
-	padding: 10px 0;
+	list-style-position: outside;
+	list-style-type: square;
+	padding: 10px 0 10px 20px;
 	font-size: 1.2em;
 	line-height: 1.5;
 }
