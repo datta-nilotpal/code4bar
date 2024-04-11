@@ -199,6 +199,21 @@ h1 {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+@keyframes easeOutAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    animation: easeOutAnimation 1s ease-out forwards;
+}
+
 .whyus-card h3 {
 	color: #000;
 	font-family: "Poppins", sans-serif;
