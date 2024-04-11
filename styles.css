@@ -283,7 +283,7 @@ h1 {
 
 #cta-section {
 	border-top: 8px solid transparent;
-	border-image: linear-gradient(to right, #1A81EF, #211AF0) 1;
+	border-image: linear-gradient(to right, #1A81EF 0%, #1A81EF 40%, #211AF0 50%, #1A81EF 60%, #1A81EF 100%) 1;
 	background: #000;
 	min-height: 50vh;
 	display:flex;
