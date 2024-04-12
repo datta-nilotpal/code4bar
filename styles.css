@@ -51,7 +51,7 @@ h1 {
 
 .logoandh1 img {
 	height: 50px;
-	width: auto;
+	width: 50px;
 }
 
 #hero-section {
@@ -147,8 +147,8 @@ h1 {
 
 .hero-btn img {
 	height: 24px;
+	width: 24px;
 	vertical-align: middle;
-	width: auto;
 	padding-right: 7px;
 }
 
@@ -236,7 +236,7 @@ h1 {
 
 .whyus-card img {
 	height: 50px;
-	width:	auto;
+	width:	50px;
 	padding-right: 20px;
 }
 
@@ -349,9 +349,9 @@ h1 {
 }
 
 #cta-section a img {
+	width: 24px;
 	height: 24px;
 	vertical-align: middle;
-	width: auto;
 	padding-right: 7px;
 }
 
