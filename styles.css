@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	font-family: "Poppins", sans-serif;
+}
+
 ::-webkit-scrollbar {
 	width: 12px;
 }
@@ -37,7 +41,6 @@ header {
 }
 
 h1 {
-	font-family: "Poppins", sans-serif;
 	text-transform: lowercase;
 	color: #FFF;
 	font-size: 35px;
@@ -81,7 +84,6 @@ h1 {
 #hero-section h2 {
 	padding-top: 150px;
 	color: #FFF;
-	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-style: normal;
     	font-size: 4em;
@@ -97,7 +99,6 @@ h1 {
 
 #hero-section h3 {
     	color: #FFF;
-    	font-family: "Poppins", sans-serif;
 	font-weight: 700;
 	font-style: normal;
     	font-size: 3em;
@@ -125,7 +126,6 @@ h1 {
 	box-sizing: border-box;
 	color: #000;
 	cursor: pointer;
-	font-family: "Poppins", sans-serif;
 	font-size: 24px;
 	height: 44px;
 	margin: 20px;
@@ -215,7 +215,6 @@ h1 {
 
 .whyus-card h3 {
 	color: #000;
-	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-style: normal;
    	font-size: 1.2em;
@@ -226,7 +225,6 @@ h1 {
 
 .whyus-card p {
 	color: #000;
-	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-style: normal;
    	font-size: 1.2em;
@@ -243,7 +241,6 @@ h1 {
 #faq-section {
 	width: 50%;
 	margin: 80px auto;
-	font-family: "Poppins", sans-serif;
 }
 
 #faq-section h2 {
@@ -296,7 +293,6 @@ h1 {
 	max-width: 75%;
 	line-height: 1.5; 
     	color: #FFF;
-	font-family: "Poppins", sans-serif;
 	backface-visibility: hidden;
 	font-weight: 300;
 	font-style: normal;
@@ -308,7 +304,6 @@ h1 {
 #cta-section p {
 	max-width: 75%;
     	color: #FFF;
-	font-family: "Poppins", sans-serif;
 	backface-visibility: hidden;
 	font-weight: 500;
 	font-style: normal;
@@ -329,7 +324,6 @@ h1 {
 	box-sizing: border-box;
 	color: #000;
 	cursor: pointer;
-	font-family: "Poppins", sans-serif;
 	font-size: 24px;
 	height: 44px;
 	margin: 20px;
@@ -372,7 +366,6 @@ footer p {
 	padding: 18px;
 	text-align: center;
 	font-size: 12px;
-	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	fontstyle: normal;
 }
