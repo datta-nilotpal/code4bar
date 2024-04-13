@@ -371,13 +371,28 @@ footer {
 	background: #000;
 }
 
-footer p, footer address {
+footer p {
 	color: #FFF;
 	padding: 18px;
 	text-align: center;
 	font-size: 12px;
 	font-weight: 400;
 	fontstyle: normal;
+}
+
+footer address {
+	color: #FFF;
+	font-style: normal;
+	padding: 18px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+	fontstyle: normal;
+}
+
+footer address a {
+	text-decoration: none;
+	color: #FFF;
 }
 
 @media (max-width: 768px) {	
