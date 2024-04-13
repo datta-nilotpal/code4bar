@@ -371,7 +371,7 @@ footer {
 	background: #000;
 }
 
-footer p {
+footer p, footer address {
 	color: #FFF;
 	padding: 18px;
 	text-align: center;
