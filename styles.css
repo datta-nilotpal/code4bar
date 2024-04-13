@@ -384,6 +384,7 @@ footer p {
 	header {
 		flex-direction: column;
 		justify-content: center;
+		padding: 10px 0;
 	}
 	#hero-section h2, #faq-section h2, #cta-section h2 {
 		font-size: 3em;
